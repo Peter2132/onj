@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+import Subcontainer from "./components/Subcontainer";
+import Subcontainer2 from "./components/Subcontainer2";
+import Card2 from "./components/Card2";
+import Card3 from "./components/Card3";
+
+
+
+
+class App extends React.Component{
+  render(){
+    return(
+      
+      <div className="back">
+        <Subcontainer/>
+        <Subcontainer2/>
+        <div>
+          <Card2/>
+        </div>
+        <div>
+          <Card3/>
+        </div>
+     
+     
+      </div>
+
+     
+
+    )
+
+  }
+
 }
 
-export default App;
+export default App
